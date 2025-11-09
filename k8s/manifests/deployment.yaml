@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-web-devops
+  labels:
+    app: go-web-devops
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-web-devops
+  template:
+    metadata:
+      labels:
+        app: go-web-devops
+    spec:
+      containers:
+        - name: go-web-devops
+          image: arkaslittlemind/go-web-devops:v1
+          ports:
+            - containerPort: 8080
