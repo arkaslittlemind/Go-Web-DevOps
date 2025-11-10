@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: go-web-devops
-          image: arkaslittlemind/go-web-devops:v1
+          image: arkaslittlemind/go-web-devops:{{ .Values.image.tag }}
           ports:
             - containerPort: 8080
