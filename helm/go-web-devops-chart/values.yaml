@@ -8,7 +8,7 @@ image:
   repository: arkaslittlemind/go-web-devops
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1"
+  tag: "19248098177"
 
 ingress:
   enabled: false
